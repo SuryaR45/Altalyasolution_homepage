@@ -1,0 +1,35 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+
+
+
+@media (min-width: 760px) and (max-width: 820px) {
+  /* Hide desktop nav + buttons */
+  header nav.md\:flex,
+  header .md\:flex {
+    display: none !important;
+  }
+
+  /* Show mobile toggle button */
+  #menuBtn {
+    display: block !important;
+  }
+
+  /* Make sure mobile nav uses flex layout */
+  #mobileMenu {
+    display: flex !important;
+  }
+}
